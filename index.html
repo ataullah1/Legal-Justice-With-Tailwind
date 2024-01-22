@@ -31,6 +31,26 @@
       referrerpolicy="no-referrer"
     />
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap');
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .eb {
+        font-family: 'EB Garamond', serif;
+        font-weight: 800;
+      }
+      p,
+      button,
+      input,
+      a,
+      .pop {
+        font-family: 'Poppins', sans-serif;
+      }
+
       .gradient-banner {
         border-radius: 8px;
         background: linear-gradient(180deg, #111 0%, rgba(17, 17, 17, 0) 100%),
@@ -135,7 +155,7 @@
           class="gradient-banner flex flex-col justify-center items-center bg-no-repeat bg-cover rounded-lg h-[550px] w-full space-y-5"
         >
           <h1
-            class="text-white text-[40px] sm:text-7xl font-extrabold leading-[60px] md:leading-[85px] text-center px-5 sm:px-7"
+            class="text-white md:max-w-[780px] text-[40px] sm:text-7xl font-extrabold leading-[60px] md:leading-[85px] text-center px-5 sm:px-7"
           >
             We Provide Effective Legal Solutions
           </h1>
@@ -151,18 +171,28 @@
             class="flex flex-col sm:flex-row gap-2 sm:gap-6 w-11/12 sm:w-4/5 md:w-7/12"
           >
             <input
-              class="rounded-lg w-full py-3 px-5 bg-white"
+              class="rounded-lg w-full py-2 sm:py-3 px-5 bg-white"
               type="search"
               name=""
               id=""
               placeholder="Search your services"
             />
             <button
-              class="btn bg-primary border-primary px-10 hover:border-primary text-base font-bold text-white rounded-lg"
+              class="bg-primary border-primary py-2 sm:py-3 px-10 hover:border-primary text-base font-bold text-white rounded-lg"
             >
               Search
             </button>
           </form>
+        </section>
+        <section class="py-28 w-full text-center">
+          <div>
+            <h2 class="text-[40px] text-center">The Legal Practice Area</h2>
+            <p class="text-base leading-6 md:max-w-[714px] m-auto">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+          </div>
         </section>
       </main>
     </div>
