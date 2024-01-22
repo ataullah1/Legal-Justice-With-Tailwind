@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div
+        class="navbar flex flex-col sm:flex-row sm:justify-between bg-base-100 bg-white"
+      >
+        <div
+          class="navbar-start flex flex-row-reverse justify-between w-full sm:w-auto sm:flex-row"
+        >
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7 rotate-180 sm:rotate-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 ml-[-140px] sm:ml-0 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a href="#" class="font-medium text-base">Home</a>
+              </li>
+              <li>
+                <a href="#" class="font-medium text-base">Services</a>
+              </li>
+              <li>
+                <a href="#" class="font-medium text-base">Cases</a>
+              </li>
+              <li>
+                <a href="#" class="font-medium text-base">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="font-medium text-base">Contact Us</a>
+              </li>
+              <div>
+                <a
+                  class="btn bg-primary sm:hidden text-base font-bold w-full text-white"
+                  >Free Consultation</a
+                >
+              </div>
+            </ul>
+          </div>
+          <a
+            href="#"
+            class="btn btn-ghost poppins text-3xl sm:text-4xl sm:text-left font-bold"
+            ><img src="./images/logo2.png" alt=""
+          /></a>
+        </div>
+        <div class="navbar-center">
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a href="#">Home<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li>
+                <a href="#">Services<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li>
+                <a href="#">Cases<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li>
+                <a href="#">Blog<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Contact Us <i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hidden sm:block">
+          <a
+            class="btn bg-primary text-base sm:text-xl font-bold px-8 sm:px-12 text-white"
+            >Free Consultation</a
+          >
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
