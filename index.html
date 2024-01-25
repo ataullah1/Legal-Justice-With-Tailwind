@@ -16,6 +16,7 @@
         theme: {
           extend: {
             colors: {
+              thprimary: '#414040',
               tprimary: '#707070',
               primary: '#B68C5A',
             },
@@ -50,6 +51,11 @@
       .pop {
         font-family: 'Poppins', sans-serif;
       }
+
+    .mainmenu>li>a:hover{
+      transform: rotate(15deg);
+
+    }
 
       .gradient-banner {
         border-radius: 8px;
@@ -86,26 +92,26 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 ml-[-140px] sm:ml-0 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                class="menu menu-sm dropdown-content mt-3 ml-[-140px] sm:ml-0 z-[1] p-2 shadow bg-base-100 rounded-box w-52 bg-white border-2 border-solid border-primary"
               >
                 <li>
-                  <a href="#" class="font-medium text-base">Home</a>
+                  <a href="#" class="font-medium text-base text-primary">Home</a>
                 </li>
                 <li>
-                  <a href="#" class="font-medium text-base">Services</a>
+                  <a href="#" class="font-medium text-base hover:text-primary">Services</a>
                 </li>
                 <li>
-                  <a href="#" class="font-medium text-base">Cases</a>
+                  <a href="#" class="font-medium text-base hover:text-primary">Cases</a>
                 </li>
                 <li>
-                  <a href="#" class="font-medium text-base">Blog</a>
+                  <a href="#" class="font-medium text-base hover:text-primary">Blog</a>
                 </li>
                 <li>
-                  <a href="#" class="font-medium text-base">Contact Us</a>
+                  <a href="#" class="font-medium text-base hover:text-primary">Contact Us</a>
                 </li>
                 <div>
                   <a
-                    class="btn bg-primary hover:border-primary sm:hidden text-base font-bold w-full text-white"
+                    class="btn bg-primary border-primary hover:border-primary hover:bg-white hover:text-primary sm:hidden text-base font-bold w-full text-white"
                     >Free Consultation</a
                   >
                 </div>
@@ -120,23 +126,23 @@
           <div class="navbar-center">
             <div class="navbar-center hidden lg:flex">
               <ul
-                class="menu menu-horizontal px-1 text-base font-normal text-tprimary"
+                class="menu menu-horizontal px-1 text-base font-normal text-tprimary mainmenu"
               >
-                <li class="bg-none hover:text-primary">
-                  <a href="#">Home<i class="fa-solid fa-angle-down"></i></a>
+                <li class="bg-none hover:text-primary text-primary">
+                  <a href="#">Home</i></a>
                 </li>
                 <li class="hover:text-primary">
-                  <a href="#">Services<i class="fa-solid fa-angle-down"></i></a>
+                  <a href="#">Services<i class="fa-solid fa-angle-right"></i></a>
                 </li>
                 <li class="hover:text-primary">
-                  <a href="#">Cases<i class="fa-solid fa-angle-down"></i></a>
+                  <a href="#">Cases <i class="fa-solid fa-angle-right"></i></a>
                 </li>
                 <li class="hover:text-primary">
-                  <a href="#">Blog<i class="fa-solid fa-angle-down"></i></a>
+                  <a href="#">Blog <i class="fa-solid fa-angle-right"></i></a>
                 </li>
                 <li class="hover:text-primary">
                   <a href="#"
-                    >Contact Us <i class="fa-solid fa-angle-down"></i
+                    >Contact Us  <i class="fa-solid fa-angle-right"></i></i
                   ></a>
                 </li>
               </ul>
@@ -144,15 +150,17 @@
           </div>
           <div class="hidden sm:block">
             <a
-              class="btn bg-primary border-primary hover:border-primary text-base sm:text-lg font-semibold px-5 sm:px-7 text-white"
+              class="btn bg-primary border-primary hover:border-primary hover:text-primary hover:bg-white text-base sm:text-lg font-semibold px-5 sm:px-7 text-white"
               >Free Consultation</a
             >
           </div>
         </div>
       </header>
       <main>
+
+        <!-- section one banner ========= -->
         <section
-          class="gradient-banner flex flex-col justify-center items-center bg-no-repeat bg-cover rounded-lg h-[550px] w-full space-y-5"
+          class="gradient-banner flex flex-col justify-center items-center bg-no-repeat bg-cover bg-right rounded-lg h-[550px] w-full space-y-5"
         >
           <h1
             class="text-white md:max-w-[780px] text-[40px] sm:text-7xl font-extrabold leading-[60px] md:leading-[85px] text-center px-5 sm:px-7"
@@ -184,15 +192,58 @@
             </button>
           </form>
         </section>
+
+        <!-- section two The Legal Practice Area ============ -->
+
         <section class="py-28 w-full text-center">
-          <div>
-            <h2 class="text-[40px] text-center">The Legal Practice Area</h2>
-            <p class="text-base leading-6 md:max-w-[714px] m-auto">
+          <div class="pb-14">
+            <h2 class="text-[40px] text-center text-thprimary">The Legal Practice Area</h2>
+            <p class="text-base leading-6 md:max-w-[714px] m-auto tprimary">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour.
             </p>
           </div>
+
+        <!-- section two grid part ======== -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-6 sm:grid-rows-3 lg:grid-rows-2">
+          <div class="text-center space-y-6  p-12">
+            <img class="h-[72px] w-[72px] m-auto" src="./images/business.png" alt="">
+            <h2 class="text-thprimary text-[32px]">Business Law</h2>
+            <p class="text-tprimary text-base max-w-[270px] m-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right text-primary text-3xl cursor-pointer hover:translate-x-2 duration-200"></i>
+          </div>
+          <div class="text-center space-y-6  p-12">
+            <img class="h-[72px] w-[72px] m-auto" src="./images/business.png" alt="">
+            <h2 class="text-thprimary text-[32px]">Business Law</h2>
+            <p class="text-tprimary text-base max-w-[270px] m-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right text-primary text-3xl cursor-pointer hover:translate-x-2 duration-200"></i>
+          </div>
+          <div class="text-center space-y-6  p-12">
+            <img class="h-[72px] w-[72px] m-auto" src="./images/business.png" alt="">
+            <h2 class="text-thprimary text-[32px]">Business Law</h2>
+            <p class="text-tprimary text-base max-w-[270px] m-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right text-primary text-3xl cursor-pointer hover:translate-x-2 duration-200"></i>
+          </div>
+          <div class="text-center space-y-6  p-12">
+            <img class="h-[72px] w-[72px] m-auto" src="./images/business.png" alt="">
+            <h2 class="text-thprimary text-[32px]">Business Law</h2>
+            <p class="text-tprimary text-base max-w-[270px] m-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right text-primary text-3xl cursor-pointer hover:translate-x-2 duration-200"></i>
+          </div>
+          <div class="text-center space-y-6  p-12">
+            <img class="h-[72px] w-[72px] m-auto" src="./images/business.png" alt="">
+            <h2 class="text-thprimary text-[32px]">Business Law</h2>
+            <p class="text-tprimary text-base max-w-[270px] m-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right text-primary text-3xl cursor-pointer hover:translate-x-2 duration-200"></i>
+          </div>
+          <div class="text-center space-y-6  p-12">
+            <img class="h-[72px] w-[72px] m-auto" src="./images/business.png" alt="">
+            <h2 class="text-thprimary text-[32px]">Business Law</h2>
+            <p class="text-tprimary text-base max-w-[270px] m-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right text-primary text-3xl cursor-pointer hover:translate-x-2 duration-200"></i>
+          </div>
+        </div>
         </section>
       </main>
     </div>
